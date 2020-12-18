@@ -12,6 +12,8 @@ In this workshop you will learn how to work with Promises.
 - [Working With Promises](#working-with-promises)
 - [Examples](#examples)
 - [`async`/`await` with Promises](#asyncawait-with-promises)
+- [Author](#author)
+- [License](#license)
 
 First, you will need to clone the repo:
 
@@ -607,3 +609,11 @@ async function waitForTask() {
   console.log(result); // Ups
 }
 ```
+
+## Author
+
+[Dani Lucaci](https://github.com/danilucaci)
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
