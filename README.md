@@ -6,6 +6,7 @@ In this workshop you will learn how to work with Promises.
 
 ## Table of Contents <!-- omit in toc -->
 
+- [Getting Started](#getting-started)
 - [Workshop Material](#workshop-material)
 - [Why Do We Need Promises?](#why-do-we-need-promises)
 - [Problems With Using Callbacks](#problems-with-using-callbacks)
@@ -14,6 +15,8 @@ In this workshop you will learn how to work with Promises.
 - [`async`/`await` with Promises](#asyncawait-with-promises)
 - [Author](#author)
 - [License](#license)
+
+## Getting Started
 
 First, you will need to clone the repo:
 
