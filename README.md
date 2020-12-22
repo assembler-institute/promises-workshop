@@ -477,18 +477,24 @@ Promise.reject(new Error("Problem!")).catch((err) => {
 `Promise.all()` enables you to be notified once all results are in. Its input is an Array of Promises, its output a single `Promise` that is fulfilled with an Array of the results.
 
 ```js
+import axios from "axios";
+
+function getUser(userId) {
+  return axios.get(`https://jsonplaceholder.typicode.com/users/${userId}`);
+}
+
 Promise.all([getUser(1), getUser(2), getUser(3), getUser(4)])
   // receives an array with the responses
   // of each Promise
   .then(([user1, user2, user3, user4]) => {
     // {id: 1, name: "Leanne Graham" …}
-    console.log(user1);
+    console.log(user1.data);
     // {id: 2, name: "Ervin Howell" …}
-    console.log(user2);
+    console.log(user2.data);
     // {id: 3, name: "Clementine Bauch" …}
-    console.log(user3);
+    console.log(user3.data);
     // {id: 4, name: "Patricia Lebsack" …}
-    console.log(user4);
+    console.log(user4.data);
   })
   .catch((error) => {
     // Fails the entire Promise
